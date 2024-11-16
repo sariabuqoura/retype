@@ -1,1 +1,1 @@
-[[{"l":"retypehhh"}]]
+[[{"l":"retypehhh"}],[{"l":"Installation"},{"l":"Installation","p":["https://www.docker.com/products/docker-desktop/","Insure the WSL is running"]},{"l":"Simple Commands","p":["All containers","Build the dockerfile","Containers","docker --version","docker build -t new_image_name:v1 .","docker images","Docker info","docker logs ContainersID","docker ps","docker ps -a","docker run -p 8080:8080 new_image_name:v1","docker run -p port-on-host:port-in-container http_get:v1","list local images","Logs","Run Docker","Running containers"]}]]
