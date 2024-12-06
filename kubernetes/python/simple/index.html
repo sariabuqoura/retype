@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Installation</title>
-    <meta name="title" content="Installation">
-    <meta name="description" content="https://www.docker.com/products/docker-desktop/">
+    <title>Kubernetes1</title>
+    <meta name="title" content="Kubernetes1">
+    <meta name="description" content="Code">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.securing-the-future.com/containers/docker/installation/">
+    <link rel="canonical" href="https://docs.securing-the-future.com/kubernetes/python/simple/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.securing-the-future.com/containers/docker/installation/">
-    <meta property="og:title" content="Installation">
-    <meta property="og:description" content="https://www.docker.com/products/docker-desktop/">
+    <meta property="og:url" content="https://docs.securing-the-future.com/kubernetes/python/simple/">
+    <meta property="og:title" content="Kubernetes1">
+    <meta property="og:description" content="Code">
+    <meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/f105e080-2d9f-4a49-bef4-19d921a37364/image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.securing-the-future.com/containers/docker/installation/">
-    <meta property="twitter:title" content="Installation">
-    <meta property="twitter:description" content="https://www.docker.com/products/docker-desktop/">
+    <meta property="twitter:url" content="https://docs.securing-the-future.com/kubernetes/python/simple/">
+    <meta property="twitter:title" content="Kubernetes1">
+    <meta property="twitter:description" content="Code">
+    <meta property="twitter:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/f105e080-2d9f-4a49-bef4-19d921a37364/image.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -35,6 +37,7 @@
     <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.786830897128" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.786830897128" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.6.0.786830897128" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -149,64 +152,164 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="installation" class="break-words">
+<doc-anchor-target id="write-simple-http-get-code" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
-        <span>Installation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#write-simple-http-get-code">#</doc-anchor-trigger>
+        <span>Write simple HTTP Get code</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="installation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
-        <span>Installation</span>
-    </h2>
-</doc-anchor-target>
-<p><code v-pre>https://www.docker.com/products/docker-desktop/</code></p>
 <ul>
-<li>Insure the WSL is running</li>
-</ul>
-<doc-anchor-target id="simple-commands">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#simple-commands">#</doc-anchor-trigger>
-        <span>Simple Commands</span>
-    </h2>
-</doc-anchor-target>
-<p>Docker info</p>
-<ul>
-<li><code v-pre>docker --version</code></li>
-<li><code v-pre>docker info</code></li>
-</ul>
-<p>Build the dockerfile</p>
-<ul>
-<li><code v-pre>docker build -t new_image_name:v1 .</code></li>
-</ul>
-<p>list local images</p>
-<ul>
-<li><code v-pre>docker images</code></li>
-</ul>
-<p>Run Docker</p>
-<ul>
-<li><code v-pre>docker run -p port-on-host:port-in-container http_get:v1</code></li>
-<li><code v-pre>docker run -p 8080:8080 new_image_name:v1</code></li>
-</ul>
-<p>Containers</p>
-<ul>
-<li>Running containers
-<ul>
-<li><code v-pre>docker ps</code></li>
-</ul>
-</li>
-<li>All containers
-<ul>
-<li><code v-pre>docker ps -a</code></li>
-</ul>
+<li><p>Code</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">from fastapi import FastAPI, HTTPException
+import uvicorn
+
+app = FastAPI()
+
+@app.get(&quot;/hello&quot;)
+async def hello(message='test'):
+
+    return {&quot;Hello &quot;:message}
+
+if __name__ == &quot;__main__&quot;:
+
+    uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8080)</code></pre>
+</doc-codeblock></div>
 </li>
 </ul>
-<p>Logs</p>
+<doc-anchor-target id="create-dockerfile">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-dockerfile">#</doc-anchor-trigger>
+        <span>Create Dockerfile</span>
+    </h2>
+</doc-anchor-target>
 <ul>
-<li>Logs
+<li><p>Requirements.txt</p>
 <ul>
-<li><code v-pre>docker logs ContainersID</code></li>
+<li><p>File</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">fastapi[all]==0.109.0
+uvicorn[standard]==0.27.0</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Simple Dockerfile</p>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-docker"><code v-pre class="language-docker"># For more information, please refer to https://aka.ms/vscode-docker-python
+FROM python:3-slim
+
+EXPOSE 8080
+
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+# Install pip requirements
+COPY requirements.txt .
+RUN python -m pip install -r requirements.txt
+
+WORKDIR /app
+COPY . /app
+
+# Creates a non-root user with an explicit UID and adds permission to access the /app folder
+# For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
+RUN adduser -u 5678 --disabled-password --gecos &quot;&quot; appuser &amp;&amp; chown -R appuser /app
+USER appuser
+
+# During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
+CMD [&quot;uvicorn&quot;,&quot;main:app&quot;,&quot;--host&quot; ,&quot;0.0.0.0&quot;, &quot;--port&quot;,&quot;8080&quot; ]
+</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="build-the-code-and-dockerfile-into-docker-image">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#build-the-code-and-dockerfile-into-docker-image">#</doc-anchor-trigger>
+        <span>Build the code and dockerfile into docker (Image)</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Command line
+<ul>
+<li><code v-pre>docker build -t http_get:v1 .</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="ymal-files">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ymal-files">#</doc-anchor-trigger>
+        <span>Ymal files</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p>Deployment</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-get-simple-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: http-get
+  template:
+    metadata:
+      labels:
+        app: http-get
+    spec:
+      containers:
+        - name: http-get-python-get
+          image: http_get:v1
+          ports:
+            - containerPort: 8080
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Service</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-yaml"><code v-pre class="language-yaml">apiVersion: v1
+kind: Service
+metadata:
+  name: http-get-simple-service
+spec:
+  selector:
+    app: http-get
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+<doc-anchor-target id="verify">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verify">#</doc-anchor-trigger>
+        <span>Verify</span>
+    </h1>
+</doc-anchor-target>
+<ul>
+<li><p>Command</p>
+<ul>
+<li><p><code v-pre>kubectl get service -o wide</code></p>
+</li>
+<li><p>Expected result</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/f105e080-2d9f-4a49-bef4-19d921a37364/image.png" alt="image.png" /></p>
+</li>
+</ul>
+</li>
+<li><p>Web Browser</p>
+<ul>
+<li><p><code v-pre>http://localhost:8080/hello</code></p>
+</li>
+<li><p>Expected result</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/7b30c098-5958-4470-9fb1-da24a75cd1d0/image.png" alt="image.png" /></p>
+</li>
 </ul>
 </li>
 </ul>
@@ -219,20 +322,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../blogs/scenarios/table-top/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../kubernetes/nodejs/simple/read/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Scenario 1</span>
+                                                <span class="block mt-1">Read</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../kubernetes/nodejs/simple/read/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../kubernetes/python/simple/first-example/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Read</span>
+                                                <span class="block mt-1">Write simple HTTP Get code</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -276,6 +379,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Installation", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Kubernetes1", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
