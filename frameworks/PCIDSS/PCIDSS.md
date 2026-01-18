@@ -1,5 +1,5 @@
 ---
-label: NIST Cybersecurity
+label: PCI DSS
 icon: book 
 order: 999
 ---
