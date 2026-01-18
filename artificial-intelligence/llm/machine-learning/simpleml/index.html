@@ -9,29 +9,35 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Detect</title>
-    <meta name="title" content="Detect">
+    <title>Codes for ML</title>
+    <meta name="title" content="Codes for ML">
+    <meta name="description" content="Create simple machine learning model">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.cynebula.com/frameworks/nistcsf/detect/">
+    <link rel="canonical" href="https://docs.cynebula.com/artificial-intelligence/llm/machine-learning/simpleml/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.cynebula.com/frameworks/nistcsf/detect/">
-    <meta property="og:title" content="Detect">
+    <meta property="og:url" content="https://docs.cynebula.com/artificial-intelligence/llm/machine-learning/simpleml/">
+    <meta property="og:title" content="Codes for ML">
+    <meta property="og:description" content="Create simple machine learning model">
+    <meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/585431fa-2adb-46a3-a359-fe3fc8c38571/image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.cynebula.com/frameworks/nistcsf/detect/">
-    <meta property="twitter:title" content="Detect">
+    <meta property="twitter:url" content="https://docs.cynebula.com/artificial-intelligence/llm/machine-learning/simpleml/">
+    <meta property="twitter:title" content="Codes for ML">
+    <meta property="twitter:description" content="Create simple machine learning model">
+    <meta property="twitter:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/585431fa-2adb-46a3-a359-fe3fc8c38571/image.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.11.0.822054685543" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.822054685543" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.822054685543" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.822054685543" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.822054685543" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.822054685543" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../../resources/js/prism.js?v=3.11.0.822054685543" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -46,7 +52,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Cynebula</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
                     </div>
@@ -151,7 +157,7 @@
                                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
                                     <ol role="list">
                                         <li class="pr-4">
-                                            <a href="../../../" class="pr-4">
+                                            <a href="../../../../" class="pr-4">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
                                                     <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
                                                 </svg>
@@ -159,32 +165,162 @@
                                             <span class="ml-1 mr-1">|</span>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="../../../frameworks/" class="pr-4">
-                                                Frameworks
-                                            </a>
+                                            <span class="pr-4">
+                                                Artificial intelligence
+                                            </span>
                                             <span class="ml-1 mr-1">|</span>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="../../../frameworks/nistcsf/" class="pr-4">
-                                                NIST Cybersecurity
-                                            </a>
+                                            <span class="pr-4">
+                                                LLM
+                                            </span>
                                             <span class="ml-1 mr-1">|</span>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="../../../frameworks/nistcsf/detect/" class="pr-4">
-                                                Detect
+                                            <span class="pr-4">
+                                                Machine learning
+                                            </span>
+                                            <span class="ml-1 mr-1">|</span>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../../../artificial-intelligence/llm/machine-learning/simpleml/" class="pr-4">
+                                                Codes for ML
                                             </a>
                                         </li>
                                     </ol>
                                 </nav>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="detect" class="break-words">
+<doc-anchor-target id="steps">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#steps">#</doc-anchor-trigger>
+        <span>Steps</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Create simple machine learning model</li>
+<li>Export the model in binary format</li>
+<li>load the model into the code</li>
+</ul>
+<doc-anchor-target id="install-packages">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#install-packages">#</doc-anchor-trigger>
+        <span>Install Packages</span>
+    </h2>
+</doc-anchor-target>
+<p><code v-pre>pip install scikit-learn</code></p>
+<p><code v-pre>pip install pandas</code></p>
+<doc-anchor-target id="download-data">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-data">#</doc-anchor-trigger>
+        <span>Download Data</span>
+    </h2>
+</doc-anchor-target>
+<p>We need to download the Music file</p>
+<p><code v-pre>https://github.com/mosh-hamedani/python-supplementary-materials</code></p>
+<p><code v-pre>https://github.com/mosh-hamedani/python-supplementary-materials/blob/main/music.csv</code></p>
+<doc-anchor-target id="codes-for-ml" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#detect">#</doc-anchor-trigger>
-        <span>Detect</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#codes-for-ml">#</doc-anchor-trigger>
+        <span>Codes for ML</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="step-1-ml-learning-code">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-ml-learning-code">#</doc-anchor-trigger>
+        <span>Step 1: ML Learning code</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p>Sample learning code</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-python"><code v-pre class="language-python">import pandas as pd
+from sklearn.tree import DecisionTreeClassifier 
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+music_data = pd.read_csv('music.csv')
+X = music_data.drop(columns = ['genre'])
+y = music_data['genre']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
+
+model = DecisionTreeClassifier()
+model.fit(X_train,y_train)
+predictions = model.predict(X_test)
+score = accuracy_score(y_test, predictions)
+print(score)
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Expected result</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/585431fa-2adb-46a3-a359-fe3fc8c38571/image.png" alt="image.png" /></p>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="step-2-save-the-model">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-save-the-model">#</doc-anchor-trigger>
+        <span>Step 2: Save the Model</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p>Export the model into joblib format</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-python"><code v-pre class="language-python">import pandas as pd
+from sklearn.tree import DecisionTreeClassifier 
+from sklearn import tree
+import joblib
+
+music_data = pd.read_csv('music.csv')
+X = music_data.drop(columns = ['genre'])
+y = music_data['genre']
+
+model = DecisionTreeClassifier()
+model.fit(X,y)
+
+joblib.dump(model,'music-recommender.joblob')</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Expected Result (New file will be created)</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/caf68513-b655-4731-8dee-a7c36b54c3e0/image.png" alt="image.png" /></p>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="step3-load-the-model">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step3-load-the-model">#</doc-anchor-trigger>
+        <span>Step3: Load the model</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Load the model into the code</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-python"><code v-pre class="language-python">import joblib
+
+model = joblib.load('music-recommender.joblob')
+
+predictions = model.predict([[21,1]])
+print(predictions)</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p>Expected result</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f957728d-52bc-414a-aad5-c7916a4193eb/f5a55410-c974-4114-8bf4-a27db384b358/image.png" alt="image.png" /></p>
+<hr>
+</li>
+</ul>
+<doc-anchor-target id="resources">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resources">#</doc-anchor-trigger>
+        <span>Resources</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><div class="aspect-video w-full rounded-lg overflow-hidden mb-6 shadow-lg dark:shadow-lg">
+    <iframe src="https://www.youtube.com/embed/7eh4d6sabA0" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full h-full"></iframe>
+</div></li>
+</ul>
 
                                 
                                 <!-- Required only on API pages -->
@@ -194,20 +330,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../frameworks/nistcsf/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../../artificial-intelligence/llm/llmguard/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">NIST Cybersecurity</span>
+                                                <span class="block mt-1">LLM Guard</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../frameworks/nistcsf/govern/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../../artificial-intelligence/llm/functioncalling/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Govern</span>
+                                                <span class="block mt-1">Function Calling</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -254,6 +390,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Detect", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Codes for ML", level: 4, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
