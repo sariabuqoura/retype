@@ -9,24 +9,21 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>LLM Guard</title>
-    <meta name="title" content="LLM Guard">
-    <meta name="description" content="Last Update on Jan, 2026.">
+    <title>Textattack</title>
+    <meta name="title" content="Textattack">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.cynebula.com/artificial-intelligence/llm/llmguard/">
+    <link rel="canonical" href="https://docs.cynebula.com/artificial-intelligence/llm/textattack/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.cynebula.com/artificial-intelligence/llm/llmguard/">
-    <meta property="og:title" content="LLM Guard">
-    <meta property="og:description" content="Last Update on Jan, 2026.">
+    <meta property="og:url" content="https://docs.cynebula.com/artificial-intelligence/llm/textattack/">
+    <meta property="og:title" content="Textattack">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.cynebula.com/artificial-intelligence/llm/llmguard/">
-    <meta property="twitter:title" content="LLM Guard">
-    <meta property="twitter:description" content="Last Update on Jan, 2026.">
+    <meta property="twitter:url" content="https://docs.cynebula.com/artificial-intelligence/llm/textattack/">
+    <meta property="twitter:title" content="Textattack">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -175,299 +172,56 @@
                                             <span class="ml-1 mr-1">|</span>
                                         </li>
                                         <li class="pr-4">
-                                            <a href="../../../artificial-intelligence/llm/llmguard/" class="pr-4">
-                                                LLM Guard
+                                            <a href="../../../artificial-intelligence/llm/textattack/" class="pr-4">
+                                                Textattack
                                             </a>
                                         </li>
                                     </ol>
                                 </nav>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="llm-guard" class="break-words">
+<doc-anchor-target id="textattack" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#llm-guard">#</doc-anchor-trigger>
-        <span>LLM Guard</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#textattack">#</doc-anchor-trigger>
+        <span>Textattack</span>
     </h1>
 </doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Last Update on Jan, 2026.</p>
-        </div>
-    </div>
-</div>
-<p>Prerequisites</p>
-<p><a href="https://llm-guard.com/get_started/installation/" class="outbound" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon mr-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg><span>https://llm-guard.com/get_started/installation/</span></a></p>
-<p>Supported Python versions:</p>
-<ul>
-<li>3.9</li>
-<li>3.10</li>
-<li>3.11</li>
-</ul>
-<doc-anchor-target id="install-python-114">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#install-python-114">#</doc-anchor-trigger>
-        <span>Install Python 11.4</span>
-    </h2>
-</doc-anchor-target>
-<p><a href="https://www.python.org/downloads/windows/#:%7E:text=3.11.4%20cannot%20be%20used%20on%20Windows%207%20or%20earlier.-,Download,-Windows%20installer%20(64%2Dbit)" class="outbound" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon mr-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg><span>https://www.python.org/downloads/windows/#:~:text=3.11.4 cannot be used on Windows 7 or earlier.-,Download,-Windows installer (64-bit)</span></a></p>
-<doc-anchor-target id="create-virtual-environment">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-virtual-environment">#</doc-anchor-trigger>
-        <span>Create virtual environment</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li>Create venv using the prerequisites Python</li>
-</ul>
-<doc-anchor-target id="required-packages">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#required-packages">#</doc-anchor-trigger>
-        <span>Required packages</span>
-    </h2>
-</doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">pip install llm-guard</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="code">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#code">#</doc-anchor-trigger>
-        <span>Code</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-jsx"><code v-pre class="language-jsx">from llm_guard import scan_output, scan_prompt
-from llm_guard.input_scanners import Anonymize, PromptInjection, TokenLimit, Toxicity
-from llm_guard.output_scanners import Deanonymize, NoRefusal, Relevance, Sensitive
-from llm_guard.vault import Vault
+<pre translate="no" class="language-python"><code v-pre class="language-python">from textattack.attack_recipes import TextFoolerJin2019
+from textattack import Attacker
+from textattack.datasets import Dataset
+from transformers import pipeline
+from textattack.models.wrappers import ModelWrapper
+import torch
 
-vault = Vault()
-input_scanners = [Anonymize(vault)]
-output_scanners = [Deanonymize(vault)]
+class SentimentWrapper(ModelWrapper):
+    def __init__(self):
+        self.model = pipeline('sentiment-analysis')
 
-#input_scanners = [Anonymize(vault), Toxicity(), TokenLimit(), PromptInjection()]
-#output_scanners = [Deanonymize(vault), NoRefusal(), Relevance(), Sensitive()]
+    def __call__(self, text_inputs):
+        outputs = []
+        for text in text_inputs:
+            result = self.model(text)[0]
+            if result['label'] == 'POSITIVE':
+                probs = [0.0, float(result['score'])]
+            else:
+                probs = [float(result['score']), 0.0]
+            outputs.append(probs)
+        return torch.tensor(outputs)
 
-prompt = input('Write your prompt here :')
+model_wrapper = SentimentWrapper()
 
-sanitized_prompt, results_valid, results_score = scan_prompt(input_scanners, prompt)
-if not all(results_valid.values()):
-    print(f&quot;Prompt {prompt} is not valid, scores: {results_score}&quot;)
-    exit(1)
+examples = [(&quot;This movie is great and amazing!&quot;, 1),
+            (&quot;This was a terrible waste of time.&quot;, 0),
+            (&quot;I really enjoyed watching this film.&quot;, 1),
+            (&quot;The worst movie I've ever seen.&quot;, 0)]
 
-print(f&quot;Prompt: {sanitized_prompt}&quot;)
+dataset = Dataset(examples)
+attack = TextFoolerJin2019.build(model_wrapper)
+attacker = Attacker(attack, dataset)
+results = attacker.attack_dataset()
 </code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="explanation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#explanation">#</doc-anchor-trigger>
-        <span>Explanation</span>
-    </h2>
-</doc-anchor-target>
-<p>Here&#x27;s a table that explains various scanners, categorized into input and output scanners, with simple terms for each:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th><strong>Category</strong></th>
-<th><strong>Scanner</strong></th>
-<th><strong>Explanation</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Input Scanners</strong></td>
-<td><strong>Anonymize</strong></td>
-<td>Removes or hides personal details from the input text to protect privacy.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanCode</strong></td>
-<td>Detects and blocks code-related inputs, especially those that might be harmful or inappropriate.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanCompetitors</strong></td>
-<td>Prevents input related to specific competitor products or brands.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanSubstrings</strong></td>
-<td>Detects and blocks specific words or patterns (substrings) in the input text.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanTopics</strong></td>
-<td>Blocks input that discusses specific topics (e.g., politics, violence).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Code</strong></td>
-<td>Identifies and manages input that contains computer code.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Gibberish</strong></td>
-<td>Detects random, nonsensical input that does not make sense (e.g., typing errors or random characters).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>InvisibleText</strong></td>
-<td>Identifies and handles invisible or hidden characters in the input text, which may affect processing.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Language</strong></td>
-<td>Detects the language of the input text.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>PromptInjection</strong></td>
-<td>Prevents manipulation of the system by injecting unwanted prompts or commands into the input.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Regex</strong></td>
-<td>Uses regular expressions to identify and block certain patterns in the text (e.g., email addresses, phone numbers).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Secrets</strong></td>
-<td>Detects sensitive information like passwords or keys hidden in the input.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Sentiment</strong></td>
-<td>Analyzes the emotional tone of the input, such as detecting if it&#x27;s positive, negative, or neutral.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>TokenLimit</strong></td>
-<td>Monitors the length of the input to ensure it does not exceed the maximum token (word unit) limit.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Toxicity</strong></td>
-<td>Detects harmful or abusive language in the input (e.g., hate speech or offensive comments).</td>
-</tr>
-<tr>
-<td><strong>Output Scanners</strong></td>
-<td><strong>BanCode</strong></td>
-<td>Identifies and blocks harmful or inappropriate code outputs.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanCompetitors</strong></td>
-<td>Prevents the output from mentioning or referencing specific competitors.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanSubstrings</strong></td>
-<td>Detects and blocks specific unwanted words or patterns in the output text.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>BanTopics</strong></td>
-<td>Prevents the model from outputting content on certain topics (e.g., politics, violence).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Bias</strong></td>
-<td>Detects biased or unfair representations in the output.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Code</strong></td>
-<td>Identifies if the output contains code and handles it accordingly.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Deanonymize</strong></td>
-<td>Detects if the output accidentally reveals personal or identifying information.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>JSON</strong></td>
-<td>Validates if the output is properly formatted as JSON (a common data format).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Language</strong></td>
-<td>Ensures the output is in the desired language.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>LanguageSame</strong></td>
-<td>Ensures the output maintains consistency in language usage throughout.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>MaliciousURLs</strong></td>
-<td>Detects harmful or unsafe URLs in the output that could lead to security risks.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>NoRefusal</strong></td>
-<td>Ensures the output does not refuse or block valid requests.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>ReadingTime</strong></td>
-<td>Estimates the time required to read the output, ensuring it&#x27;s not too long or short for a specific purpose.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>FactualConsistency</strong></td>
-<td>Checks if the output is factually consistent and accurate.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Gibberish</strong></td>
-<td>Detects if the output contains nonsensical or meaningless content.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Regex</strong></td>
-<td>Uses regular expressions to filter or format the output based on specific patterns (e.g., phone numbers, dates).</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Relevance</strong></td>
-<td>Ensures the output is relevant to the user&#x27;s input or request.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Sensitive</strong></td>
-<td>Detects and blocks sensitive or inappropriate information in the output.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Sentiment</strong></td>
-<td>Analyzes and classifies the emotional tone (positive, negative, neutral) of the output.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Toxicity</strong></td>
-<td>Identifies and blocks harmful, offensive, or toxic language in the output.</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>URLReachability</strong></td>
-<td>Checks if URLs in the output are reachable (i.e., the link works).</td>
-</tr>
-</tbody>
-</table>
-</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -477,20 +231,20 @@ print(f&quot;Prompt: {sanitized_prompt}&quot;)
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../frameworks/pcidss/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../artificial-intelligence/llm/functioncalling/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">PCI DSS</span>
+                                                <span class="block mt-1">Function Calling</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../artificial-intelligence/llm/functioncalling/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../artificial-intelligence/llm/tokenizer/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Function Calling</span>
+                                                <span class="block mt-1">Tokenizer</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -537,6 +291,6 @@ print(f&quot;Prompt: {sanitized_prompt}&quot;)
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "LLM Guard", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Textattack", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
