@@ -1,0 +1,13 @@
+| **Extension** | **Description** | **Saves Training Data?** | **Security Posture** | **Common Usage** | **Used In** |
+| --- | --- | --- | --- | --- | --- |
+| **.safetensors** | A secure and fast tensor storage format designed for storing model weights safely. Prevents arbitrary code execution. | **No** | **High**: Prevents arbitrary code execution, more secure than .bin | Model Weights | **AI, LLM** |
+| **.pt** | PyTorch's model file format. Can store model architecture, weights, and optimizer states. | **No** (Usually) | **Medium**: Potential for arbitrary code execution on load | Model Weights & Training States | **AI, LLM, ML** |
+| **.bin** | Generic binary file format used in Hugging Face models (e.g., Transformers). Stores model weights. | **No** | **Medium**: May contain arbitrary code execution if mishandled | Model Weights | **AI, LLM** |
+| **.h5** | HDF5 format commonly used in Keras and TensorFlow. Stores model architecture and weights. | **No** | **Medium**: Generally safe but may store additional code or configs | Model Weights | **AI, ML** |
+| **.onnx** | Open Neural Network Exchange format for interoperability between frameworks (e.g., PyTorch to TensorFlow). | **No** | **High**: Safe for sharing models across platforms without arbitrary code execution | Model Interoperability | **AI, ML** |
+| **.joblib** | Python's Joblib format used for saving scikit-learn models and other Python objects. | **Yes** | **Medium**: Can run arbitrary code when loading | Model Weights & Training Data | **ML** |
+| **.pkl** | Python’s pickle format for serializing objects, including models. | **Yes** | **Low**: Can execute arbitrary code during deserialization | Model Weights & Training Data | **ML** |
+| **.tflite** | TensorFlow Lite format for deploying optimized models on mobile and edge devices. | **No** | **High**: Optimized for secure and efficient inference on devices | Inference Models | **AI, ML** |
+| **.ckpt** | Checkpoint format used in TensorFlow and PyTorch to store model weights and training states. | **No** (Usually) | **Medium**: May contain arbitrary code depending on the content | Model Weights & Training States | **AI, LLM, ML** |
+| **.ggml** | An optimized format for smaller models used in efficient inference, especially in resource-constrained environments. | **No** | **Medium**: Focuses on performance; generally safe for inference | Optimized Inference Models | **AI, LLM** |
+| **.gguf** | Successor to .ggml, more optimized for larger models, specifically large language models (LLMs). | **No** | **High**: Improved security and efficiency for large models | Optimized Inference Models | **AI, LLM** |
