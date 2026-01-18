@@ -30,6 +30,12 @@ branding:
   label: Docs
 
 # -----------------------------------------------------------------------------
+nav:
+  mode: stack   # Pro key required
+  icons:
+    mode: pages # Pro key required
+
+# -----------------------------------------------------------------------------
 links:
   - text: Welcome
     link: https://docs.cynebula.com/
