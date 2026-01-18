@@ -1,6 +1,6 @@
 ---
 label: PCI DSS
-icon: book 
+icon: credit-card
 order: 999
 ---
 !!!
