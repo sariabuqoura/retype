@@ -14,25 +14,12 @@ Last Update on Jan, 2026.
 | SSL 1.0  | 1994 | ❌ Broken / never released | ❌ Not allowed     | Prototype only          |
 | SSL 2.0  | 1995 | ❌ Insecure                | ❌ Prohibited      | MITM vulnerabilities    |
 | SSL 3.0  | 1996 | ❌ Insecure                | ❌ Prohibited      | POODLE attack           |
+| PCT 1.0  | 1996 | ❌ Insecure                | ❌ Prohibited      | Microsoft pre-SSL protocol   |
 | TLS 1.0  | 1999 | ❌ Deprecated              | ❌ Non-compliant   | BEAST, weak crypto      |
 | TLS 1.1  | 2006 | ❌ Deprecated              | ❌ Non-compliant   | Legacy only             |
 | TLS 1.2  | 2008 | ⚠️ Secure if hardened     | ✅ Compliant       | Must use strong ciphers |
+| Multi-Protocol Unified Hello (MPUH)  | 2017 |   |      | Handshake Mechanism |
 | TLS 1.3  | 2018 | ✅ Secure                  | ✅ Fully compliant | Recommended standard    |
-
-
-| Protocol / Mechanism                    | Year Introduced | Type                | Security Status           | Notes                      |
-| --------------------------------------- | --------------- | ------------------- | ------------------------- | -------------------------- |
-| **SSL 1.0**                             | 1994            | Encryption Protocol | ❌ Broken / never released | Prototype only             |
-| **SSL 2.0**                             | 1995            | Encryption Protocol | ❌ Insecure                | MITM vulnerabilities       |
-| **SSL 3.0**                             | 1996            | Encryption Protocol | ❌ Insecure                | POODLE attack              |
-| **PCT 1.0**                             | 1996            | Encryption Protocol | ❌ Insecure                | Microsoft pre-SSL protocol |
-| **TLS 1.0**                             | 1999            | Encryption Protocol | ❌ Deprecated              | BEAST, weak crypto         |
-| **TLS 1.1**                             | 2006            | Encryption Protocol | ❌ Deprecated              | Legacy                     |
-| **TLS 1.2**                             | 2008            | Encryption Protocol | ⚠️ Secure if hardened     | Strong ciphers required     |
-| **Multi-Protocol Unified Hello (MPUH)** | 2017            | Handshake Mechanism |                            |                             |
-| **TLS 1.3**                             | 2018            | Encryption Protocol | ✅ Secure                  | Current standard           |
-
-
 
 
 
