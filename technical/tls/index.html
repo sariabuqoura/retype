@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822119367935">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822119667941">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.822119367935" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822119667941" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822119367935" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822119667941" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822119367935" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822119667941" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -206,6 +206,12 @@
     </h3>
 </doc-anchor-target>
 <hr>
+<doc-anchor-target id="protocols-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#protocols-1">#</doc-anchor-trigger>
+        <span>Protocols</span>
+    </h2>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -284,6 +290,12 @@
 </tbody>
 </table>
 </div>
+<doc-anchor-target id="ciphers">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ciphers">#</doc-anchor-trigger>
+        <span>Ciphers</span>
+    </h2>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -414,6 +426,120 @@
 <td><span class="docs-emoji">&#x2705;</span> Secure</td>
 <td></td>
 <td>Secure modern AEAD</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="hash-algorithms">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hash-algorithms">#</doc-anchor-trigger>
+        <span>Hash Algorithms</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Hash Algorithm</th>
+<th>Output Size</th>
+<th>Year Introduced</th>
+<th>Security Status</th>
+<th>Compliance</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>MD5</strong></td>
+<td>128-bit</td>
+<td>1992</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Collision attacks practical</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>SHA-1</strong></td>
+<td>160-bit</td>
+<td>1995</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>SHAttered collision</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>SHA-256</strong></td>
+<td>256-bit</td>
+<td>2001</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Approved standard</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>SHA-384</strong></td>
+<td>384-bit</td>
+<td>2001</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Approved standard</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>SHA-512</strong></td>
+<td>512-bit</td>
+<td>2001</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Approved standard</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="key-exchange">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#key-exchange">#</doc-anchor-trigger>
+        <span>Key Exchange</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Key Exchange</th>
+<th>Year Introduced</th>
+<th>Security Status</th>
+<th>Compliance</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Diffie-Hellman (DH)</strong></td>
+<td>1976</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Secure if 2048-bit+</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Vulnerable to Logjam with small groups (&lt;2048-bit)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>PKCS (RSA key exchange)</strong></td>
+<td>1977 / 1980s (PKCS #1)</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Deprecated in TLS 1.2</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS (legacy)</td>
+<td>Forward secrecy not guaranteed; use carefully</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Elliptic Curve Diffie-Hellman (ECDH / ECDHE)</strong></td>
+<td>2005</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Recommended; supports forward secrecy</td>
 </tr>
 </tbody>
 </table>
@@ -768,9 +894,9 @@
 </table>
 </div>
 <hr>
-<doc-anchor-target id="ciphers">
+<doc-anchor-target id="ciphers-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ciphers">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ciphers-1">#</doc-anchor-trigger>
         <span>Ciphers</span>
     </h3>
 </doc-anchor-target>
