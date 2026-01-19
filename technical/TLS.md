@@ -101,7 +101,54 @@ Last Update on Jan, 2026.
 | 2  | PKCS                         |  Strict | PCI |  Best |  FIPS | InUse |
 | 3  | ECDH                         |  Strict | PCI |  Best |  FIPS | InUse |
 
-***
+
+## Cipher Suite
+
+| #  | Cipher Suite                            | Status        | Recommendation           | Notes                                     |
+| -- | --------------------------------------- | ------------- | ------------------------ | ----------------------------------------- |
+| 1  | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384   | ✅ Safe        | Use                      | AEAD, Forward Secrecy (FS), FIPS-approved |
+| 2  | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256   | ✅ Safe        | Use                      | AEAD, FS, FIPS-approved                   |
+| 3  | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384   | ⚠️ Acceptable | Use if GCM not available | CBC, FS, weaker than GCM                  |
+| 4  | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256   | ⚠️ Acceptable | Use if GCM not available | CBC, FS                                   |
+| 5  | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA      | ⚠️ Acceptable | Avoid if possible        | CBC, FS, SHA-1 legacy                     |
+| 6  | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA      | ⚠️ Acceptable | Avoid if possible        | CBC, FS, SHA-1 legacy                     |
+| 7  | TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 | ✅ Safe        | Use                      | AEAD, FS, modern cert type                |
+| 8  | TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 | ✅ Safe        | Use                      | AEAD, FS                                  |
+| 9  | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 | ⚠️ Acceptable | Use if GCM not available | CBC, FS                                   |
+| 10 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 | ⚠️ Acceptable | Use if GCM not available | CBC, FS                                   |
+| 11 | TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA    | ⚠️ Acceptable | Avoid                    | CBC, SHA-1                                |
+| 12 | TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA    | ⚠️ Acceptable | Avoid                    | CBC, SHA-1                                |
+| 13 | TLS_RSA_WITH_AES_256_GCM_SHA384         | ⚠️ Acceptable | Legacy use only          | No forward secrecy                        |
+| 14 | TLS_RSA_WITH_AES_128_GCM_SHA256         | ⚠️ Acceptable | Legacy use only          | No forward secrecy                        |
+| 15 | TLS_RSA_WITH_AES_256_CBC_SHA256         | ⚠️ Acceptable | Legacy                   | CBC, no FS                                |
+| 16 | TLS_RSA_WITH_AES_128_CBC_SHA256         | ⚠️ Acceptable | Legacy                   | CBC, no FS                                |
+| 17 | TLS_RSA_WITH_AES_256_CBC_SHA            | ⚠️ Acceptable | Legacy                   | CBC, SHA-1, no FS                         |
+| 18 | TLS_RSA_WITH_AES_128_CBC_SHA            | ⚠️ Acceptable | Legacy                   | CBC, SHA-1, no FS                         |
+| 19 | TLS_DHE_RSA_WITH_AES_256_GCM_SHA384     | ✅ Safe        | Use if ECDHE unavailable | AEAD, FS                                  |
+| 20 | TLS_DHE_RSA_WITH_AES_128_GCM_SHA256     | ✅ Safe        | Use if ECDHE unavailable | AEAD, FS                                  |
+| 21 | TLS_DHE_RSA_WITH_AES_256_CBC_SHA        | ⚠️ Acceptable | Use if GCM unavailable   | CBC, FS                                   |
+| 22 | TLS_DHE_RSA_WITH_AES_128_CBC_SHA        | ⚠️ Acceptable | Use if GCM unavailable   | CBC, FS                                   |
+| 23 | TLS_RSA_WITH_3DES_EDE_CBC_SHA           | ❌ Insecure    | Disable                  | Vulnerable to SWEET32                     |
+| 24 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA256     | ⚠️ Acceptable | Legacy / rare            | CBC, FS                                   |
+| 25 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA256     | ⚠️ Acceptable | Legacy / rare            | CBC, FS                                   |
+| 26 | TLS_DHE_DSS_WITH_AES_256_CBC_SHA        | ⚠️ Acceptable | Legacy                   | CBC, FS                                   |
+| 27 | TLS_DHE_DSS_WITH_AES_128_CBC_SHA        | ⚠️ Acceptable | Legacy                   | CBC, FS                                   |
+| 28 | TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA       | ❌ Insecure    | Disable                  | SWEET32                                   |
+| 29 | TLS_RSA_WITH_RC4_128_SHA                | ❌ Insecure    | Disable                  | RC4 banned                                |
+| 30 | TLS_RSA_WITH_RC4_128_MD5                | ❌ Insecure    | Disable                  | RC4 banned                                |
+| 31 | TLS_RSA_WITH_NULL_SHA256                | ❌ Insecure    | Disable                  | No encryption                             |
+| 32 | TLS_RSA_WITH_NULL_SHA                   | ❌ Insecure    | Disable                  | No encryption                             |
+| 33 | TLS_PSK_WITH_AES_256_GCM_SHA384         | ⚠️ Acceptable | Use cautiously           | PSK use cases only                        |
+| 34 | TLS_PSK_WITH_AES_128_GCM_SHA256         | ⚠️ Acceptable | Use cautiously           | PSK only                                  |
+| 35 | TLS_PSK_WITH_AES_256_CBC_SHA384         | ⚠️ Acceptable | Use cautiously           | CBC, PSK                                  |
+| 36 | TLS_PSK_WITH_AES_128_CBC_SHA256         | ⚠️ Acceptable | Use cautiously           | CBC, PSK                                  |
+| 37 | TLS_PSK_WITH_NULL_SHA384                | ❌ Insecure    | Disable                  | No encryption, PSK                        |
+| 38 | TLS_PSK_WITH_NULL_SHA                   | ❌ Insecure    | Disable                  | No encryption, PSK                        |
+
+
+
+
+
 ### Ciphers
 
 | No | Cipher | Strict | PCI | Best | FIPS | TLS 1.2 InUse |
