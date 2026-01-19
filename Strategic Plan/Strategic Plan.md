@@ -21,3 +21,8 @@ plan should include a risk assessment.
 | Innovation / Differentiation | Medium–High     | Secure innovation, IP protection   |
 | Cost Leadership              | Medium          | Efficient, automated controls      |
 | Client Service / Stability   | Very High       | Availability, trust, compliance    |
+
+
+# Rescourse 
+* https://store.isaca.org/s/store#/store/browse/detail/a2S4w000004Ko9bEAC
+* https://www.isaca.org/-/media/files/isacadp/feature/downloads/c/cobit-2019-design-toolkit_tkt_eng_0222.zip
