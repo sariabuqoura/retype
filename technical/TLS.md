@@ -37,7 +37,7 @@ Last Update on Jan, 2026.
 | 10 | **3DES**    | 168-bit    | 1998            | ⚠️ Deprecated   | ❌ Prohibited (modern compliance) | SWEET32 attack       |
 | 11 | **AES-128** | 128-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
 | 12 | **AES-256** | 256-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
-| 13 | **ChaCha20-Poly1305**  | xxx    | 2014            | ✅ Secure        |          | Secure modern AEAD   |
+| 13 | **ChaCha20-Poly1305**  | 256-bit   | 2014    | ✅ Secure      |                                    | Secure modern AEAD   |
 
 
 
