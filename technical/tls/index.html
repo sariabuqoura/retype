@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822117186963">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822117827154">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.822117186963" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822117827154" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822117186963" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822117827154" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822117186963" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822117827154" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -206,12 +206,19 @@
     </h3>
 </doc-anchor-target>
 <hr>
+<p>PCT 1.0	Legacy Microsoft protocol	<span class="docs-emoji">&#x274C;</span> Obsolete / insecure
+SSL 2.0	Legacy	<span class="docs-emoji">&#x274C;</span> Broken, must be disabled
+SSL 3.0	Legacy	<span class="docs-emoji">&#x274C;</span> Broken (POODLE), must be disabled
+TLS 1.0	Marked Best + FIPS	<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Deprecated – no longer PCI compliant
+TLS 1.1	Marked Best + FIPS	<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Deprecated – no longer PCI compliant
+TLS 1.2	Strict + PCI + Best + FIPS + InUse	<span class="docs-emoji">&#x2705;</span> Secure and compliant</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>No</th>
 <th>Server Protocol</th>
+<th>Meaning</th>
 <th>Strict</th>
 <th>PCI</th>
 <th>Best</th>
@@ -228,10 +235,12 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>PCT 1.0</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -246,10 +255,12 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>SSL 3.0</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -261,6 +272,7 @@
 <td>TLS 1.0</td>
 <td></td>
 <td></td>
+<td></td>
 <td>Best</td>
 <td>FIPS</td>
 <td></td>
@@ -270,6 +282,7 @@
 <td>TLS 1.1</td>
 <td></td>
 <td></td>
+<td></td>
 <td>Best</td>
 <td>FIPS</td>
 <td></td>
@@ -277,12 +290,30 @@
 <tr>
 <td>7</td>
 <td>TLS 1.2</td>
+<td></td>
 <td>Strict</td>
 <td>PCI</td>
 <td>Best</td>
 <td>FIPS</td>
 <td>InUse</td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>No</th>
+<th>Server Protocol</th>
+<th>Strict</th>
+<th>PCI</th>
+<th>Best</th>
+<th>FIPS</th>
+<th>InUse</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td></td>
 <td></td>
