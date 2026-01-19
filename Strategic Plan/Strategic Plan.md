@@ -13,6 +13,11 @@ Long-term goals and visions for the future are discussed in a strategic plan. A 
 plan should include a risk assessment.
 
 
+## Industry Dimension 
+* 
+
+
+
 ## Types
 * Enterprise strategy
 * Enterprise goals
