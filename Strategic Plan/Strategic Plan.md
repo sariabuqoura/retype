@@ -1,9 +1,8 @@
 ---
 label: Strategic Plan
-icon: home
-order: 999
+icon: tools
+order: 996
 ---
-
 
 # Strategic Plan
 Strategic Plan A strategic plan is a long-term plan that is fairly stable. It defines the
