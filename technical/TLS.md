@@ -23,6 +23,26 @@ Last Update on Jan, 2026.
 
 
 
+| #  | Cipher      | Key Length | Year Introduced | Security Status | Compliance                       | Notes                |
+| -- | ----------- | ---------- | --------------- | --------------- | -------------------------------- | -------------------- |
+| 1  | **NULL**    | 0          | 1994            | ❌ Insecure      | ❌ Prohibited                     | No encryption        |
+| 2  | **DES**     | 56-bit     | 1977            | ❌ Broken        | ❌ Prohibited                     | Brute-force broken   |
+| 3  | **RC2**     | 40-bit     | 1987            | ❌ Broken        | ❌ Prohibited                     | Export-grade weak    |
+| 4  | **RC2**     | 56-bit     | 1987            | ❌ Broken        | ❌ Prohibited                     | Weak key             |
+| 5  | **RC2**     | 128-bit    | 1987            | ❌ Deprecated    | ❌ Prohibited                     | Obsolete design      |
+| 6  | **RC4**     | 40-bit     | 1987            | ❌ Broken        | ❌ Prohibited                     | Stream cipher flaws  |
+| 7  | **RC4**     | 56-bit     | 1987            | ❌ Broken        | ❌ Prohibited                     | Same weaknesses      |
+| 8  | **RC4**     | 64-bit     | 1987            | ❌ Broken        | ❌ Prohibited                     | Statistically broken |
+| 9  | **RC4**     | 128-bit    | 1987            | ❌ Broken        | ❌ Prohibited                     | Banned by RFC 7465   |
+| 10 | **3DES**    | 168-bit    | 1998            | ⚠️ Deprecated   | ❌ Prohibited (modern compliance) | SWEET32 attack       |
+| 11 | **AES-128** | 128-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
+| 12 | **AES-256** | 256-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
+
+
+
+
+
+
 
 
 | No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
