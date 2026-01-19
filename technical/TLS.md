@@ -60,48 +60,6 @@ Last Update on Jan, 2026.
 
 
 
-
-| No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
-| -- | ---------------------------- |-----| ------- | --- | ----- | ----- | ----- |
-| 1  | Multi-Protocol Unified Hello |Legacy  |        |     |       |       |       |
-| 2  | PCT 1.0                      |Legacy  |        |     |       |       |       |
-| 3  | SSL 2.0                      |Legacy |        |     |       |       |       |
-| 4  | SSL 3.0                      |Legacy |        |     |       |       |       |
-| 5  | TLS 1.0                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
-| 6  | TLS 1.1                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
-| 7  | TLS 1.2                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
-| 8  | TLS 1.3                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
-
-| No | Server Protocol              |  Strict | PCI |  Best |  FIPS | InUse |
-| -- | ---------------------------- | ------- | --- | ----- | ----- | ----- |
-|    |                              |         |     |       |       |       |
-|    | Ciphers                      |         |     |       |       |       |
-| 1  | NULL                         |         |     |       |       |       |
-| 2  | DES 56/56                    |         |     |       |       |       |
-| 3  | RC2 40/128                   |         |     |       |       |       |
-| 4  | RC2 56/128                   |         |     |       |       |       |
-| 5  | RC2 128/128                  |         |     |       |       |       |
-| 6  | RC4 40/128                   |         |     |       |       |       |
-| 7  | RC4 56/128                   |         |     |       |       |       |
-| 8  | RC4 64/128                   |         |     |       |       |       |
-| 9  | RC4 128/128                  |         |     |       |       |       |
-| 10 | Triple DES 168               |  Strict | PCI |  Best |  FIPS |       |
-| 11 | AES 128/128                  |  Strict | PCI |  Best |  FIPS | InUse |
-| 12 | AES 256/256                  |  Strict | PCI |  Best |  FIPS | InUse |
-|    |                              |         |     |       |       |       |
-|    | Hashes                       |         |     |       |       |       |
-| 1  | MD5                          |  Strict | PCI |  Best |       |       |
-| 2  | SHA                          |  Strict | PCI |  Best |  FIPS |       |
-| 3  | SHA 256                      |  Strict | PCI |  Best |  FIPS | InUse |
-| 4  | SHA 384                      |  Strict | PCI |  Best |  FIPS | InUse |
-| 5  | SHA 512                      |  Strict | PCI |  Best |  FIPS | InUse |
-|    |                              |         |     |       |       |       |
-|    | Key Exchange                 |         |     |       |       |       |
-| 1  | Diffie-Hellman               |  Strict | PCI |  Best |  FIPS | InUse |
-| 2  | PKCS                         |  Strict | PCI |  Best |  FIPS | InUse |
-| 3  | ECDH                         |  Strict | PCI |  Best |  FIPS | InUse |
-
-
 ## Cipher Suite
 
 | #  | Cipher Suite                            | Status        | Recommendation           | Notes                                     |
@@ -144,6 +102,51 @@ Last Update on Jan, 2026.
 | 36 | TLS_PSK_WITH_AES_128_CBC_SHA256         | ⚠️ Acceptable | Use cautiously           | CBC, PSK                                  |
 | 37 | TLS_PSK_WITH_NULL_SHA384                | ❌ Insecure    | Disable                  | No encryption, PSK                        |
 | 38 | TLS_PSK_WITH_NULL_SHA                   | ❌ Insecure    | Disable                  | No encryption, PSK                        |
+
+
+## Old 
+
+
+| No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
+| -- | ---------------------------- |-----| ------- | --- | ----- | ----- | ----- |
+| 1  | Multi-Protocol Unified Hello |Legacy  |        |     |       |       |       |
+| 2  | PCT 1.0                      |Legacy  |        |     |       |       |       |
+| 3  | SSL 2.0                      |Legacy |        |     |       |       |       |
+| 4  | SSL 3.0                      |Legacy |        |     |       |       |       |
+| 5  | TLS 1.0                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
+| 6  | TLS 1.1                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
+| 7  | TLS 1.2                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
+| 8  | TLS 1.3                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
+
+| No | Server Protocol              |  Strict | PCI |  Best |  FIPS | InUse |
+| -- | ---------------------------- | ------- | --- | ----- | ----- | ----- |
+|    |                              |         |     |       |       |       |
+|    | Ciphers                      |         |     |       |       |       |
+| 1  | NULL                         |         |     |       |       |       |
+| 2  | DES 56/56                    |         |     |       |       |       |
+| 3  | RC2 40/128                   |         |     |       |       |       |
+| 4  | RC2 56/128                   |         |     |       |       |       |
+| 5  | RC2 128/128                  |         |     |       |       |       |
+| 6  | RC4 40/128                   |         |     |       |       |       |
+| 7  | RC4 56/128                   |         |     |       |       |       |
+| 8  | RC4 64/128                   |         |     |       |       |       |
+| 9  | RC4 128/128                  |         |     |       |       |       |
+| 10 | Triple DES 168               |  Strict | PCI |  Best |  FIPS |       |
+| 11 | AES 128/128                  |  Strict | PCI |  Best |  FIPS | InUse |
+| 12 | AES 256/256                  |  Strict | PCI |  Best |  FIPS | InUse |
+|    |                              |         |     |       |       |       |
+|    | Hashes                       |         |     |       |       |       |
+| 1  | MD5                          |  Strict | PCI |  Best |       |       |
+| 2  | SHA                          |  Strict | PCI |  Best |  FIPS |       |
+| 3  | SHA 256                      |  Strict | PCI |  Best |  FIPS | InUse |
+| 4  | SHA 384                      |  Strict | PCI |  Best |  FIPS | InUse |
+| 5  | SHA 512                      |  Strict | PCI |  Best |  FIPS | InUse |
+|    |                              |         |     |       |       |       |
+|    | Key Exchange                 |         |     |       |       |       |
+| 1  | Diffie-Hellman               |  Strict | PCI |  Best |  FIPS | InUse |
+| 2  | PKCS                         |  Strict | PCI |  Best |  FIPS | InUse |
+| 3  | ECDH                         |  Strict | PCI |  Best |  FIPS | InUse |
+
 
 
 
