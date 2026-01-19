@@ -20,12 +20,12 @@ TLS 1.2	Strict + PCI + Best + FIPS + InUse	✅ Secure and compliant
 
 | No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
 | -- | ---------------------------- |-----| ------- | --- | ----- | ----- | ----- |
-| 1  | Multi-Protocol Unified Hello | |        |     |       |       |       |
-| 2  | PCT 1.0                      | |        |     |       |       |       |
-| 3  | SSL 2.0                      | |        |     |       |       |       |
-| 4  | SSL 3.0                      | |        |     |       |       |       |
-| 5  | TLS 1.0                      | |        |     |  Best |  FIPS |       |
-| 6  | TLS 1.1                      | |        |     |  Best |  FIPS |       |
+| 1  | Multi-Protocol Unified Hello |Legacy  |        |     |       |       |       |
+| 2  | PCT 1.0                      |Legacy  |        |     |       |       |       |
+| 3  | SSL 2.0                      |Legacy |        |     |       |       |       |
+| 4  | SSL 3.0                      |Legacy |        |     |       |       |       |
+| 5  | TLS 1.0                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
+| 6  | TLS 1.1                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
 | 7  | TLS 1.2                      |  |Strict | PCI |  Best |  FIPS | InUse |
 
 
