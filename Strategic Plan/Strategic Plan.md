@@ -1,7 +1,7 @@
 ---
 label: Strategic Plan
 icon: tools
-order: 996
+order: 998
 ---
 
 # Strategic Plan
