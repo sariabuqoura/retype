@@ -9,6 +9,7 @@ Last Update on Jan, 2026.
 ### Protocols 
 ***
 
+## Protocols
 | Protocol | Year | Security Status           | Compliance Status | Key Notes               |
 | -------- | ---- | ------------------------- | ----------------- | ----------------------- |
 | SSL 1.0  | 1994 | ❌ Broken / never released | ❌ Not allowed     | Prototype only          |
@@ -22,7 +23,7 @@ Last Update on Jan, 2026.
 | TLS 1.3  | 2018 | ✅ Secure                  | ✅ Fully compliant | Recommended standard    |
 
 
-
+## Ciphers
 | #  | Cipher      | Key Length | Year Introduced | Security Status | Compliance                       | Notes                |
 | -- | ----------- | ---------- | --------------- | --------------- | -------------------------------- | -------------------- |
 | 1  | **NULL**    | 0          | 1994            | ❌ Insecure      | ❌ Prohibited                     | No encryption        |
@@ -38,6 +39,24 @@ Last Update on Jan, 2026.
 | 11 | **AES-128** | 128-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
 | 12 | **AES-256** | 256-bit    | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS              | Approved standard    |
 | 13 | **ChaCha20-Poly1305**  | 256-bit   | 2014    | ✅ Secure      |                                    | Secure modern AEAD   |
+
+
+## Hash Algorithms
+| # | Hash Algorithm | Output Size | Year Introduced | Security Status | Compliance          | Notes                       |
+| - | -------------- | ----------- | --------------- | --------------- | ------------------- | --------------------------- |
+| 1 | **MD5**        | 128-bit     | 1992            | ❌ Broken        | ❌ Prohibited        | Collision attacks practical |
+| 2 | **SHA-1**      | 160-bit     | 1995            | ❌ Broken        | ❌ Prohibited        | SHAttered collision         |
+| 3 | **SHA-256**    | 256-bit     | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS | Approved standard           |
+| 4 | **SHA-384**    | 384-bit     | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS | Approved standard           |
+| 5 | **SHA-512**    | 512-bit     | 2001            | ✅ Secure        | ✅ PCI / NIST / FIPS | Approved standard           |
+
+
+## Key Exchange
+| # | Key Exchange                                     | Year Introduced        | Security Status          | Compliance                   | Notes                                              |
+| - | ------------------------------------------------ | ---------------------- | ------------------------ | ---------------------------- | -------------------------------------------------- |
+| 1 | **Diffie-Hellman (DH)**                          | 1976                   | ⚠️ Secure if 2048-bit+   | ✅ PCI / NIST / FIPS          | Vulnerable to Logjam with small groups (<2048-bit) |
+| 2 | **PKCS (RSA key exchange)**                      | 1977 / 1980s (PKCS #1) | ⚠️ Deprecated in TLS 1.2 | ✅ PCI / NIST / FIPS (legacy) | Forward secrecy not guaranteed; use carefully      |
+| 3 | **Elliptic Curve Diffie-Hellman (ECDH / ECDHE)** | 2005                   | ✅ Secure                 | ✅ PCI / NIST / FIPS          | Recommended; supports forward secrecy              |
 
 
 
