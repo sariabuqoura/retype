@@ -9,13 +9,33 @@ Last Update on Jan, 2026.
 ### Protocols 
 ***
 
+| Protocol | Year | Security Status           | Compliance Status | Key Notes               |
+| -------- | ---- | ------------------------- | ----------------- | ----------------------- |
+| SSL 1.0  | 1994 | ❌ Broken / never released | ❌ Not allowed     | Prototype only          |
+| SSL 2.0  | 1995 | ❌ Insecure                | ❌ Prohibited      | MITM vulnerabilities    |
+| SSL 3.0  | 1996 | ❌ Insecure                | ❌ Prohibited      | POODLE attack           |
+| TLS 1.0  | 1999 | ❌ Deprecated              | ❌ Non-compliant   | BEAST, weak crypto      |
+| TLS 1.1  | 2006 | ❌ Deprecated              | ❌ Non-compliant   | Legacy only             |
+| TLS 1.2  | 2008 | ⚠️ Secure if hardened     | ✅ Compliant       | Must use strong ciphers |
+| TLS 1.3  | 2018 | ✅ Secure                  | ✅ Fully compliant | Recommended standard    |
 
-PCT 1.0	Legacy Microsoft protocol	❌ Obsolete / insecure
-SSL 2.0	Legacy	❌ Broken, must be disabled
-SSL 3.0	Legacy	❌ Broken (POODLE), must be disabled
-TLS 1.0	Marked Best + FIPS	⚠️ Deprecated – no longer PCI compliant
-TLS 1.1	Marked Best + FIPS	⚠️ Deprecated – no longer PCI compliant
-TLS 1.2	Strict + PCI + Best + FIPS + InUse	✅ Secure and compliant
+
+| Protocol / Mechanism                    | Year Introduced | Type                | Security Status           | Notes                      |
+| --------------------------------------- | --------------- | ------------------- | ------------------------- | -------------------------- |
+| **SSL 1.0**                             | 1994            | Encryption Protocol | ❌ Broken / never released | Prototype only             |
+| **SSL 2.0**                             | 1995            | Encryption Protocol | ❌ Insecure                | MITM vulnerabilities       |
+| **SSL 3.0**                             | 1996            | Encryption Protocol | ❌ Insecure                | POODLE attack              |
+| **PCT 1.0**                             | 1996            | Encryption Protocol | ❌ Insecure                | Microsoft pre-SSL protocol |
+| **TLS 1.0**                             | 1999            | Encryption Protocol | ❌ Deprecated              | BEAST, weak crypto         |
+| **TLS 1.1**                             | 2006            | Encryption Protocol | ❌ Deprecated              | Legacy                     |
+| **TLS 1.2**                             | 2008            | Encryption Protocol | ⚠️ Secure if hardened     | Strong ciphers required     |
+| **Multi-Protocol Unified Hello (MPUH)** | 2017            | Handshake Mechanism |                            |                             |
+| **TLS 1.3**                             | 2018            | Encryption Protocol | ✅ Secure                  | Current standard           |
+
+
+
+
+
 
 
 | No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
@@ -26,8 +46,8 @@ TLS 1.2	Strict + PCI + Best + FIPS + InUse	✅ Secure and compliant
 | 4  | SSL 3.0                      |Legacy |        |     |       |       |       |
 | 5  | TLS 1.0                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
 | 6  | TLS 1.1                      |Deprecated – no longer PCI compliant |        |     |  Best |  FIPS |       |
-| 7  | TLS 1.2                      |  |Strict | PCI |  Best |  FIPS | InUse |
-
+| 7  | TLS 1.2                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
+| 8  | TLS 1.3                      |Mandatory |Strict | PCI |  Best |  FIPS | InUse |
 
 | No | Server Protocol              |  Strict | PCI |  Best |  FIPS | InUse |
 | -- | ---------------------------- | ------- | --- | ----- | ----- | ----- |
