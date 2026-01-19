@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822119890639">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822120086544">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.822119890639" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822120086544" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822119890639" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822120086544" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822119890639" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822120086544" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -544,6 +544,299 @@
 </tbody>
 </table>
 </div>
+<doc-anchor-target id="cipher-suite">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cipher-suite">#</doc-anchor-trigger>
+        <span>Cipher Suite</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Cipher Suite</th>
+<th>Status</th>
+<th>Recommendation</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use</td>
+<td>AEAD, Forward Secrecy (FS), FIPS-approved</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use</td>
+<td>AEAD, FS, FIPS-approved</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM not available</td>
+<td>CBC, FS, weaker than GCM</td>
+</tr>
+<tr>
+<td>4</td>
+<td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM not available</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>5</td>
+<td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Avoid if possible</td>
+<td>CBC, FS, SHA-1 legacy</td>
+</tr>
+<tr>
+<td>6</td>
+<td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Avoid if possible</td>
+<td>CBC, FS, SHA-1 legacy</td>
+</tr>
+<tr>
+<td>7</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use</td>
+<td>AEAD, FS, modern cert type</td>
+</tr>
+<tr>
+<td>8</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use</td>
+<td>AEAD, FS</td>
+</tr>
+<tr>
+<td>9</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM not available</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>10</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM not available</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>11</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Avoid</td>
+<td>CBC, SHA-1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Avoid</td>
+<td>CBC, SHA-1</td>
+</tr>
+<tr>
+<td>13</td>
+<td>TLS_RSA_WITH_AES_256_GCM_SHA384</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy use only</td>
+<td>No forward secrecy</td>
+</tr>
+<tr>
+<td>14</td>
+<td>TLS_RSA_WITH_AES_128_GCM_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy use only</td>
+<td>No forward secrecy</td>
+</tr>
+<tr>
+<td>15</td>
+<td>TLS_RSA_WITH_AES_256_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, no FS</td>
+</tr>
+<tr>
+<td>16</td>
+<td>TLS_RSA_WITH_AES_128_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, no FS</td>
+</tr>
+<tr>
+<td>17</td>
+<td>TLS_RSA_WITH_AES_256_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, SHA-1, no FS</td>
+</tr>
+<tr>
+<td>18</td>
+<td>TLS_RSA_WITH_AES_128_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, SHA-1, no FS</td>
+</tr>
+<tr>
+<td>19</td>
+<td>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use if ECDHE unavailable</td>
+<td>AEAD, FS</td>
+</tr>
+<tr>
+<td>20</td>
+<td>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</td>
+<td><span class="docs-emoji">&#x2705;</span> Safe</td>
+<td>Use if ECDHE unavailable</td>
+<td>AEAD, FS</td>
+</tr>
+<tr>
+<td>21</td>
+<td>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM unavailable</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>22</td>
+<td>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use if GCM unavailable</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>23</td>
+<td>TLS_RSA_WITH_3DES_EDE_CBC_SHA</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>Vulnerable to SWEET32</td>
+</tr>
+<tr>
+<td>24</td>
+<td>TLS_DHE_DSS_WITH_AES_256_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy / rare</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>25</td>
+<td>TLS_DHE_DSS_WITH_AES_128_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy / rare</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>26</td>
+<td>TLS_DHE_DSS_WITH_AES_256_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>27</td>
+<td>TLS_DHE_DSS_WITH_AES_128_CBC_SHA</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Legacy</td>
+<td>CBC, FS</td>
+</tr>
+<tr>
+<td>28</td>
+<td>TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>SWEET32</td>
+</tr>
+<tr>
+<td>29</td>
+<td>TLS_RSA_WITH_RC4_128_SHA</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>RC4 banned</td>
+</tr>
+<tr>
+<td>30</td>
+<td>TLS_RSA_WITH_RC4_128_MD5</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>RC4 banned</td>
+</tr>
+<tr>
+<td>31</td>
+<td>TLS_RSA_WITH_NULL_SHA256</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>No encryption</td>
+</tr>
+<tr>
+<td>32</td>
+<td>TLS_RSA_WITH_NULL_SHA</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>No encryption</td>
+</tr>
+<tr>
+<td>33</td>
+<td>TLS_PSK_WITH_AES_256_GCM_SHA384</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use cautiously</td>
+<td>PSK use cases only</td>
+</tr>
+<tr>
+<td>34</td>
+<td>TLS_PSK_WITH_AES_128_GCM_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use cautiously</td>
+<td>PSK only</td>
+</tr>
+<tr>
+<td>35</td>
+<td>TLS_PSK_WITH_AES_256_CBC_SHA384</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use cautiously</td>
+<td>CBC, PSK</td>
+</tr>
+<tr>
+<td>36</td>
+<td>TLS_PSK_WITH_AES_128_CBC_SHA256</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
+<td>Use cautiously</td>
+<td>CBC, PSK</td>
+</tr>
+<tr>
+<td>37</td>
+<td>TLS_PSK_WITH_NULL_SHA384</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>No encryption, PSK</td>
+</tr>
+<tr>
+<td>38</td>
+<td>TLS_PSK_WITH_NULL_SHA</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td>Disable</td>
+<td>No encryption, PSK</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="old">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#old">#</doc-anchor-trigger>
+        <span>Old</span>
+    </h2>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -889,293 +1182,6 @@
 <td>Best</td>
 <td>FIPS</td>
 <td>InUse</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="cipher-suite">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cipher-suite">#</doc-anchor-trigger>
-        <span>Cipher Suite</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>#</th>
-<th>Cipher Suite</th>
-<th>Status</th>
-<th>Recommendation</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use</td>
-<td>AEAD, Forward Secrecy (FS), FIPS-approved</td>
-</tr>
-<tr>
-<td>2</td>
-<td>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use</td>
-<td>AEAD, FS, FIPS-approved</td>
-</tr>
-<tr>
-<td>3</td>
-<td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM not available</td>
-<td>CBC, FS, weaker than GCM</td>
-</tr>
-<tr>
-<td>4</td>
-<td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM not available</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>5</td>
-<td>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Avoid if possible</td>
-<td>CBC, FS, SHA-1 legacy</td>
-</tr>
-<tr>
-<td>6</td>
-<td>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Avoid if possible</td>
-<td>CBC, FS, SHA-1 legacy</td>
-</tr>
-<tr>
-<td>7</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use</td>
-<td>AEAD, FS, modern cert type</td>
-</tr>
-<tr>
-<td>8</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use</td>
-<td>AEAD, FS</td>
-</tr>
-<tr>
-<td>9</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM not available</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>10</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM not available</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>11</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Avoid</td>
-<td>CBC, SHA-1</td>
-</tr>
-<tr>
-<td>12</td>
-<td>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Avoid</td>
-<td>CBC, SHA-1</td>
-</tr>
-<tr>
-<td>13</td>
-<td>TLS_RSA_WITH_AES_256_GCM_SHA384</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy use only</td>
-<td>No forward secrecy</td>
-</tr>
-<tr>
-<td>14</td>
-<td>TLS_RSA_WITH_AES_128_GCM_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy use only</td>
-<td>No forward secrecy</td>
-</tr>
-<tr>
-<td>15</td>
-<td>TLS_RSA_WITH_AES_256_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, no FS</td>
-</tr>
-<tr>
-<td>16</td>
-<td>TLS_RSA_WITH_AES_128_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, no FS</td>
-</tr>
-<tr>
-<td>17</td>
-<td>TLS_RSA_WITH_AES_256_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, SHA-1, no FS</td>
-</tr>
-<tr>
-<td>18</td>
-<td>TLS_RSA_WITH_AES_128_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, SHA-1, no FS</td>
-</tr>
-<tr>
-<td>19</td>
-<td>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use if ECDHE unavailable</td>
-<td>AEAD, FS</td>
-</tr>
-<tr>
-<td>20</td>
-<td>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</td>
-<td><span class="docs-emoji">&#x2705;</span> Safe</td>
-<td>Use if ECDHE unavailable</td>
-<td>AEAD, FS</td>
-</tr>
-<tr>
-<td>21</td>
-<td>TLS_DHE_RSA_WITH_AES_256_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM unavailable</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>22</td>
-<td>TLS_DHE_RSA_WITH_AES_128_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use if GCM unavailable</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>23</td>
-<td>TLS_RSA_WITH_3DES_EDE_CBC_SHA</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>Vulnerable to SWEET32</td>
-</tr>
-<tr>
-<td>24</td>
-<td>TLS_DHE_DSS_WITH_AES_256_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy / rare</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>25</td>
-<td>TLS_DHE_DSS_WITH_AES_128_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy / rare</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>26</td>
-<td>TLS_DHE_DSS_WITH_AES_256_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>27</td>
-<td>TLS_DHE_DSS_WITH_AES_128_CBC_SHA</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Legacy</td>
-<td>CBC, FS</td>
-</tr>
-<tr>
-<td>28</td>
-<td>TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>SWEET32</td>
-</tr>
-<tr>
-<td>29</td>
-<td>TLS_RSA_WITH_RC4_128_SHA</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>RC4 banned</td>
-</tr>
-<tr>
-<td>30</td>
-<td>TLS_RSA_WITH_RC4_128_MD5</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>RC4 banned</td>
-</tr>
-<tr>
-<td>31</td>
-<td>TLS_RSA_WITH_NULL_SHA256</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>No encryption</td>
-</tr>
-<tr>
-<td>32</td>
-<td>TLS_RSA_WITH_NULL_SHA</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>No encryption</td>
-</tr>
-<tr>
-<td>33</td>
-<td>TLS_PSK_WITH_AES_256_GCM_SHA384</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use cautiously</td>
-<td>PSK use cases only</td>
-</tr>
-<tr>
-<td>34</td>
-<td>TLS_PSK_WITH_AES_128_GCM_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use cautiously</td>
-<td>PSK only</td>
-</tr>
-<tr>
-<td>35</td>
-<td>TLS_PSK_WITH_AES_256_CBC_SHA384</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use cautiously</td>
-<td>CBC, PSK</td>
-</tr>
-<tr>
-<td>36</td>
-<td>TLS_PSK_WITH_AES_128_CBC_SHA256</td>
-<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Acceptable</td>
-<td>Use cautiously</td>
-<td>CBC, PSK</td>
-</tr>
-<tr>
-<td>37</td>
-<td>TLS_PSK_WITH_NULL_SHA384</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>No encryption, PSK</td>
-</tr>
-<tr>
-<td>38</td>
-<td>TLS_PSK_WITH_NULL_SHA</td>
-<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
-<td>Disable</td>
-<td>No encryption, PSK</td>
 </tr>
 </tbody>
 </table>
