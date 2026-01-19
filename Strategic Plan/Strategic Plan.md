@@ -13,19 +13,50 @@ Long-term goals and visions for the future are discussed in a strategic plan. A 
 plan should include a risk assessment.
 
 
+## Types
+* Enterprise strategy
+* Enterprise goals
+* Risk profile
+* IT-related issues
+* Threat landscape
+* Compliance requirements
+* Role of IT
+* Sourcing model for IT
+* IT implementation methods
+* Technology adoption strategy
+* Enterprise size
+* Future factors
+
+
 
 ## Enterprise Desgin Factor
 
 ### Enterprise Strategy 
 | Archetype                    | Security Impact | Security Focus                     |
-| ---------------------------- | --------------- | ---------------------------------- |
-| Growth / Acquisition         | High            | Integration, IAM, third-party risk |
-| Innovation / Differentiation | Medium–High     | Secure innovation, IP protection   |
-| Cost Leadership              | Medium          | Efficient, automated controls      |
-| Client Service / Stability   | Very High       | Availability, trust, compliance    |
+| ---------------------------- | --------------- | ---------------------------------- |------------------------------------------------------------------------------------------------------------|
+| Growth / Acquisition         | High            | Integration, IAM, third-party risk | The enterprise has a focus on growing (revenues).                                                          |
+| Innovation / Differentiation | Medium–High     | Secure innovation, IP protection   | The enterprise has a focus on offering different and/or innovative products and services to their clients. |
+| Cost Leadership              | Medium          | Efficient, automated controls      | The enterprise has a focus on short-term cost minimization.                                                |
+| Client Service / Stability   | Very High       | Availability, trust, compliance    |  The enterprise has a focus on providing stable and client-oriented service.                               |
+
 
 
 ### Enterprise Goals 
+|Reference| Balanced Scorecard (BSC)| Dimension|
+|----------|------------------------|-----------|
+|EG01| Financial| Portfolio of competitive products and services|
+|EG02| Financial| Managed business risk|
+|EG03| Financial| Compliance with external laws and regulations|
+|EG04| Financial| Quality of financial information|
+|EG05| Customer| Customer-oriented service culture|
+|EG06| Customer| Business-service continuity and availability|
+|EG07| Customer| Quality of management information|
+|EG08| Internal| Optimization of internal business process functionality|
+|EG09| Internal| Optimization of business process costs|
+|EG10| Interna| Staff skills, motivation and productivity|
+|EG11| Internal| Compliance with internal policies|
+|EG12| Growth| Managed digital transformation programs|
+|EG13| Growth| Product and business innovation|
 
 | Value                                                              |
 | ------------------------------------------------------------------ |
