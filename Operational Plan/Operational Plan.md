@@ -1,5 +1,5 @@
 ---
-label: Tactical Plan 
+label: Operational Plan
 icon: tools
 order: 996
 ---
