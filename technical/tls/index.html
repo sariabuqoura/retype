@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822118897276">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822119168052">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.822118897276" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.822119168052" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822118897276" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822119168052" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822118897276" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822119168052" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -280,6 +280,131 @@
 <td><span class="docs-emoji">&#x2705;</span> Secure</td>
 <td><span class="docs-emoji">&#x2705;</span> Fully compliant</td>
 <td>Recommended standard</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>#</th>
+<th>Cipher</th>
+<th>Key Length</th>
+<th>Year Introduced</th>
+<th>Security Status</th>
+<th>Compliance</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>NULL</strong></td>
+<td>0</td>
+<td>1994</td>
+<td><span class="docs-emoji">&#x274C;</span> Insecure</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>No encryption</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>DES</strong></td>
+<td>56-bit</td>
+<td>1977</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Brute-force broken</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>RC2</strong></td>
+<td>40-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Export-grade weak</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>RC2</strong></td>
+<td>56-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Weak key</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>RC2</strong></td>
+<td>128-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Deprecated</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Obsolete design</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>RC4</strong></td>
+<td>40-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Stream cipher flaws</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>RC4</strong></td>
+<td>56-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Same weaknesses</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>RC4</strong></td>
+<td>64-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Statistically broken</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>RC4</strong></td>
+<td>128-bit</td>
+<td>1987</td>
+<td><span class="docs-emoji">&#x274C;</span> Broken</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited</td>
+<td>Banned by RFC 7465</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>3DES</strong></td>
+<td>168-bit</td>
+<td>1998</td>
+<td><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Deprecated</td>
+<td><span class="docs-emoji">&#x274C;</span> Prohibited (modern compliance)</td>
+<td>SWEET32 attack</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>AES-128</strong></td>
+<td>128-bit</td>
+<td>2001</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Approved standard</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>AES-256</strong></td>
+<td>256-bit</td>
+<td>2001</td>
+<td><span class="docs-emoji">&#x2705;</span> Secure</td>
+<td><span class="docs-emoji">&#x2705;</span> PCI / NIST / FIPS</td>
+<td>Approved standard</td>
 </tr>
 </tbody>
 </table>
