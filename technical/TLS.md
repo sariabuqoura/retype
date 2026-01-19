@@ -8,15 +8,29 @@ Last Update on Jan, 2026.
 # TLS configuration 
 ### Protocols 
 ***
+
+
+PCT 1.0	Legacy Microsoft protocol	❌ Obsolete / insecure
+SSL 2.0	Legacy	❌ Broken, must be disabled
+SSL 3.0	Legacy	❌ Broken (POODLE), must be disabled
+TLS 1.0	Marked Best + FIPS	⚠️ Deprecated – no longer PCI compliant
+TLS 1.1	Marked Best + FIPS	⚠️ Deprecated – no longer PCI compliant
+TLS 1.2	Strict + PCI + Best + FIPS + InUse	✅ Secure and compliant
+
+
+| No | Server Protocol              |Meaning|  Strict | PCI |  Best |  FIPS | InUse |
+| -- | ---------------------------- |-----| ------- | --- | ----- | ----- | ----- |
+| 1  | Multi-Protocol Unified Hello | |        |     |       |       |       |
+| 2  | PCT 1.0                      | |        |     |       |       |       |
+| 3  | SSL 2.0                      | |        |     |       |       |       |
+| 4  | SSL 3.0                      | |        |     |       |       |       |
+| 5  | TLS 1.0                      | |        |     |  Best |  FIPS |       |
+| 6  | TLS 1.1                      | |        |     |  Best |  FIPS |       |
+| 7  | TLS 1.2                      |  |Strict | PCI |  Best |  FIPS | InUse |
+
+
 | No | Server Protocol              |  Strict | PCI |  Best |  FIPS | InUse |
 | -- | ---------------------------- | ------- | --- | ----- | ----- | ----- |
-| 1  | Multi-Protocol Unified Hello |         |     |       |       |       |
-| 2  | PCT 1.0                      |         |     |       |       |       |
-| 3  | SSL 2.0                      |         |     |       |       |       |
-| 4  | SSL 3.0                      |         |     |       |       |       |
-| 5  | TLS 1.0                      |         |     |  Best |  FIPS |       |
-| 6  | TLS 1.1                      |         |     |  Best |  FIPS |       |
-| 7  | TLS 1.2                      |  Strict | PCI |  Best |  FIPS | InUse |
 |    |                              |         |     |       |       |       |
 |    | Ciphers                      |         |     |       |       |       |
 | 1  | NULL                         |         |     |       |       |       |
