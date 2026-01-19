@@ -1,5 +1,5 @@
 ---
-label: Govern
+label: TLS configuration 
 icon: book 
 ---
 !!!
