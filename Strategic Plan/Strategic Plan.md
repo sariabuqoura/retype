@@ -24,5 +24,5 @@ plan should include a risk assessment.
 
 
 # Rescourse 
-* https://store.isaca.org/s/store#/store/browse/detail/a2S4w000004Ko9bEAC
-* https://www.isaca.org/-/media/files/isacadp/feature/downloads/c/cobit-2019-design-toolkit_tkt_eng_0222.zip
+* Please See [COBIT](https://store.isaca.org/s/store#/store/browse/detail/a2S4w000004Ko9bEAC)
+* Direct Download [Toolkit](https://www.isaca.org/-/media/files/isacadp/feature/downloads/c/cobit-2019-design-toolkit_tkt_eng_0222.zip)
