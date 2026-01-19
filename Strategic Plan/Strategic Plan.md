@@ -14,13 +14,34 @@ plan should include a risk assessment.
 
 
 
-## Archetype
+## Enterprise Desgin Factor
+
+### Enterprise Strategy 
 | Archetype                    | Security Impact | Security Focus                     |
 | ---------------------------- | --------------- | ---------------------------------- |
 | Growth / Acquisition         | High            | Integration, IAM, third-party risk |
 | Innovation / Differentiation | Medium–High     | Secure innovation, IP protection   |
 | Cost Leadership              | Medium          | Efficient, automated controls      |
 | Client Service / Stability   | Very High       | Availability, trust, compliance    |
+
+
+### Enterprise Goals 
+
+| Value                                                              |
+| ------------------------------------------------------------------ |
+| **EG01** — Portfolio of competitive products and services          |
+| **EG02** — Managed business risk                                   |
+| **EG03** — Compliance with external laws and regulations           |
+| **EG04** — Quality of financial information                        |
+| **EG05** — Customer-oriented service culture                       |
+| **EG06** — Business-service continuity and availability            |
+| **EG07** — Quality of management information                       |
+| **EG08** — Optimization of internal business process functionality |
+| **EG09** — Optimization of business process costs                  |
+| **EG10** — Staff skills, motivation and productivity               |
+| **EG11** — Compliance with internal policies                       |
+| **EG12** — Managed digital transformation programs                 |
+| **EG13** — Product and business innovation                         |
 
 
 # Rescourse 
