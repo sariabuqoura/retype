@@ -1,7 +1,7 @@
 
 
 
-# NIST Framework
+# NIST RMF Framework
 
 ## Resources 
 * SP 800-30 Rev. 1: [Guide for Conducting Risk Assessments](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf)
