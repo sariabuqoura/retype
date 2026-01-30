@@ -19,16 +19,16 @@ plan should include a risk assessment.
 
 Your final **Security Strategic Plan** should include:
 
-1. Executive Summary  
-2. Security Purpose & Vision  
-3. Business Context  
-4. Security Scope & Functions  
-5. Risk Assessment Summary  
-6. Strategic Objectives  
-7. Strategic Initiatives  
-8. Multi-Year Roadmap  
-9. Metrics & KPIs  
-10. Governance & Review  
+1. Define the Security Purpose 
+2. Understand Business Context
+3. Define Security Scope & Functions
+4. Perform a High-Level Risk Assessment
+5. Define Security Vision (5-Year Target State)
+6. Set Strategic Security Objectives (3–6 Only)
+7. Define Strategic Initiatives (How Objectives Are Achieved)
+8. Create a 3–5 Year Roadmap
+9. Define Metrics & Success Criteria
+10. Governance & Review Model
 
 ## Key Rule for Small Companies
 
