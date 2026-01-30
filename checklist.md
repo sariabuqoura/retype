@@ -10,4 +10,6 @@ Last Update on Jan, 2026.
 # Check list 
 
 ## To build this website
--[] Test
+- [x] Welcome Page
+- [x] The Starting Point
+- [x] 
