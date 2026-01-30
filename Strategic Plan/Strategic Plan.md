@@ -1,5 +1,5 @@
 ---
-label: Tactical Plan 
+label: Strategic Plan
 icon: tools
 order: 900
 ---
