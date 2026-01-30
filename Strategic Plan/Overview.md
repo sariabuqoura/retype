@@ -29,10 +29,3 @@ Your final **Security Strategic Plan** should include:
 8. Create a 3–5 Year Roadmap
 9. Define Metrics & Success Criteria
 10. Governance & Review Model
-
-## Key Rule for Small Companies
-
-- **Strategy** = Direction  
-- **Policies** = Rules  
-- **Roadmaps** = Execution  
-
