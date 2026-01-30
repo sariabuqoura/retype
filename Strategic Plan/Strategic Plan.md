@@ -28,6 +28,11 @@ Your final **Security Strategic Plan** should include:
 9. Metrics & KPIs  
 10. Governance & Review  
 
+## Key Rule for Small Companies
+
+- **Strategy** = Direction  
+- **Policies** = Rules  
+- **Roadmaps** = Execution  
 
 
 ## Enterprise Desgin Factor
