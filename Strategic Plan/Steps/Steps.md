@@ -1,7 +1,7 @@
 ---
 label: Steps
 icon: tools
-order: 1000
+order: 800
 ---
 
 
