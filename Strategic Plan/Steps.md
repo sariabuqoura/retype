@@ -1,4 +1,4 @@
-# Security Strategic Plan (Small Company)
+# Security Strategic
 
 ---
 
