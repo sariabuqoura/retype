@@ -1,7 +1,7 @@
 ---
 label: Strategic Plan
 icon: tools
-order: 998
+order: 800
 ---
 
 ## Overall
