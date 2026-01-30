@@ -1,7 +1,6 @@
 ---
 label: Security Functions
 icon: workflow
-
 ---
 
 # Security Functions
