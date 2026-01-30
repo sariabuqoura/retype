@@ -1,6 +1,6 @@
 ---
 label: Check list 
-icon: rocket 
+icon: checklist
 order: 998
 ---
 !!!
