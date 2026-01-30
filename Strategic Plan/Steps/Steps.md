@@ -1,5 +1,5 @@
 ---
 label: Steps
 icon: zap
-order: 900
+order: 800
 ---
