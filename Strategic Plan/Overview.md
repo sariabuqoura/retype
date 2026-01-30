@@ -1,6 +1,6 @@
 ---
 label: Overall
-icon: tools
+icon: apps
 order: 900
 ---
 
