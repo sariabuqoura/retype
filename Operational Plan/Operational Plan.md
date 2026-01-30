@@ -1,7 +1,7 @@
 ---
 label: Operational Plan
 icon: tools
-order: 780
+order: 700
 ---
 
 # Operational Plan

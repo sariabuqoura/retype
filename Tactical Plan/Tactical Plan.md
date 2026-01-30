@@ -1,7 +1,7 @@
 ---
 label: Tactical Plan 
 icon: tools
-order: 790
+order: 800
 ---
 
 # Tactical Plan 
