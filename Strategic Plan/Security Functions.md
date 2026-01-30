@@ -100,9 +100,3 @@ icon: workflow
 * Budget & resource planning
 * Executive communication
 * Program maturity & alignment with business
-
-
-
-Convert it into an org chart
-
-Align it with banking / fintech structures
