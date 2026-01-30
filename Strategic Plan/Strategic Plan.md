@@ -13,24 +13,20 @@ Long-term goals and visions for the future are discussed in a strategic plan. A 
 plan should include a risk assessment.
 
 
-## Industry Dimension 
-* 
+## Strategic Plan Structure
 
+Your final **Security Strategic Plan** should include:
 
-
-## Types
-* Enterprise strategy
-* Enterprise goals
-* Risk profile
-* IT-related issues
-* Threat landscape
-* Compliance requirements
-* Role of IT
-* Sourcing model for IT
-* IT implementation methods
-* Technology adoption strategy
-* Enterprise size
-* Future factors
+1. Executive Summary  
+2. Security Purpose & Vision  
+3. Business Context  
+4. Security Scope & Functions  
+5. Risk Assessment Summary  
+6. Strategic Objectives  
+7. Strategic Initiatives  
+8. Multi-Year Roadmap  
+9. Metrics & KPIs  
+10. Governance & Review  
 
 
 
